@@ -2,6 +2,8 @@
 
 This is collection of scripts to help compile texts (mostly related to the Ethiopian Orthodox Tewahedo Church, but not limited to) written in markdown format to docx or pdf using pandoc.
 
+See also: [Pandoc's Markdown Documentation](https://pandoc.org/MANUAL.html#pandocs-markdown)
+
 ## Simple Compilation
 
 To compile a markdown file to docx:
@@ -48,11 +50,13 @@ Then, you can reference it in your markdown as:
 
 This will output something like:
 
-```
-ቤተ ክርስቲያን ረቂቅ የክርስቶስ አካል ናት [1]
+---
 
-[1] መድሎተ ጽድቅ ቅጽ 1 - ምዕራፍ 1
-```
+ቤተ ክርስቲያን ረቂቅ የክርስቶስ አካል ናት^1^
+
+^1^ መድሎተ ጽድቅ ቅጽ 1 - ምዕራፍ 1
+
+---
 
 A bibliography list (ዋቢ መጻሕፍት) is automatically generated at the end of your document.
 
