@@ -89,3 +89,19 @@ But for PDF documents, you can change these using the pandoc options in `pdf.con
 ```
 -V 'mainfont:Abyssinica SIL' -V 'quotefont:Ebrima' -V 'monofont:Ebrima'
 ```
+
+## Table of Contents Generation
+
+The script `compile-toc.sh` can generate table of contents for your markdown document, as:
+
+```
+compile-toc.sh myDoc.md
+```
+
+This will generate a table of contents document `myDoc_toc.md` and `myDoc_toc.docx` using the template documents specified above. To specify depth,
+
+```
+compile-toc.sh myDoc.md 4
+```
+
+This will generate the TOC with the given depth (4 in the above example). A depth of 4 will result in a TOC including level 1 up to level 4 headings. The default level is 2.
